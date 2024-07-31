@@ -1,0 +1,177 @@
+/* Estilos generales para el cuerpo del documento */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5dc;
+    padding-bottom: 60px; /* Espacio reservado para el pie de página */
+}
+
+/* Contenedor principal para manejar el espacio y posicionamiento */
+.main-container {
+    flex: 10; /* Permite que el contenedor principal ocupe todo el espacio disponible entre el encabezado y el pie de página */
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #000000;
+    color: #fff;
+    padding: 0,5px 0;
+    text-align: center;
+}
+
+/* Contenedor para el contenido del encabezado */
+.header-content {
+    display: flex;
+    justify-content: space-between; /* Distribuye las imágenes y el título */
+    align-items: center; /* Alinea verticalmente las imágenes y el título */
+    padding: 0 10px; /* Espaciado a los lados */
+}
+
+/* Estilos para las imágenes en el encabezado */
+.header-image {
+    max-width: 300px; /* Ajusta el tamaño máximo de las imágenes */
+    height: auto; /* Mantiene la proporción original de las imágenes */
+}
+
+
+/* Estilos para el formulario de búsqueda */
+#search-form {
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #000000;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search-form label {
+    margin-right: 10px;
+}
+
+#search-form input[type="text"] {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ffff00;
+    border-radius: 4px;
+}
+
+#search-form button {
+    padding: 8px 16px;
+    font-size: 16px;
+    color: #f5f5f5;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#search-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para el contenido principal */
+main {
+    padding: 20px;
+}
+
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 0,5px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Contenedor para los iconos de redes sociales */
+.social-media {
+    margin-top: 10px; /* Espacio superior para separar de la información de copyright */
+}
+
+/* Estilo para los iconos de redes sociales */
+.social-media a {
+    margin: 0 10px; /* Espacio entre los iconos */
+    display: inline-block;
+}
+
+.social-media img {
+    width: 50px; /* Tamaño de los iconos, ajústalo según tus necesidades */
+    height: auto; /* Mantiene la proporción de la imagen */
+    vertical-align: middle; /* Alinea verticalmente con el texto */
+    transition: opacity 0.3s;
+}
+
+.social-media img:hover {
+    opacity: 0.7; /* Efecto de desvanecimiento al pasar el ratón */
+}
+
+/* Estilos para la sección desplegable de patentes */
+.expandable {
+    margin: 20px 0;
+}
+
+.toggle-button, .toggle-button-nested {
+    background-color: #000000;
+    color: #f5f5f5;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: left;
+    width: 100%;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.toggle-button:hover, .toggle-button-nested:hover {
+    background-color: #575353; /* Cambia el color de fondo al pasar el ratón por encima */
+}
+
+/* Estilos para el contenido expandible */
+.expandable-content, .expandable-content-nested {
+    display: none; /* Inicialmente oculto */
+    padding: 10px;
+    background-color: #f5f5dc;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Asegúrate de que el contenido anidado también se expanda correctamente */
+.expandable-content p, .expandable-content-nested p {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.expandable-content img, .expandable-content-nested img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 10px;
+}
+
+
+.highlighted {
+    background-color: #ffeb3b;
+    border: 1px solid #fbc02d
+}
+
+/* Estilos para el logo */
+.logo-container {
+    text-align: center; /* Centra el contenido dentro del contenedor */
+    margin-top: 20px; /* Espacio superior para separar del contenido anterior */
+}
+
+.logo-container img {
+    max-width: 100px; /* Ajusta el tamaño máximo del logo */
+    height: auto; /* Mantiene la proporción original del logo */
+}
